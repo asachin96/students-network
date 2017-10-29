@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:14px;
+	border-collapse:collapse;
+	background-color:black;
+	box-shadow:10px 10px 100px rgba(8,93,111,1);
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+pre{
+	font-family:times new roman;
+}
+
+li{
+	list-style-type:none;
+}
+
+img{
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	color:rgba(0,0,204,1);
+}
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color:white;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+     background-color:rgba(8,93,111,1);
+}
+

@@ -1,0 +1,33 @@
+<?php
+	session_start();
+	$db=mysql_connect('localhost','students_sachin','!sn;2614');
+	mysql_select_db('students_network',$db);
+?>
+<?php
+if(isset($_POST['submit'])){
+	if((!empty($_POST['email']))&&(!empty($_POST['password']))){   
+		$email=$_POST['email'];
+		$check=$_POST['remember'];
+		$pass=sha1($_POST['password']);
+		$query="select password from details where email='$email'";
+		$s=mysql_query($query,$db);
+		$row=mysql_fetch_array($s);
+		$redirect=$_POST['redirect'];
+		if($row['password']==$pass){
+			$cook=$pass+$_POST['email'];
+			$cook=sha1($cook);
+			if($check==TRUE)
+				setcookie(ln,$cook,time()+3600*24*30);
+			else
+				setcookie(ln,$cook);
+			setcookie(nm,$email,time()+3600*24*30);
+			$_SESSION['email']=$row['email'];
+			header("location:".$redirect);
+		}
+		else{
+			header("location:login.php?p=123321&email=".$email);
+		}
+	}
+}
+?>
+<?php mysql_close($db); ?>

@@ -1,0 +1,10 @@
+<?php 
+session_start();
+	if(!isset($_SESSION['email'])){	
+    header("location:login.php");
+	exit;
+	}
+	$email=$_SESSION['email'];
+	$db=mysql_connect('localhost','root','php');
+	mysql_select_db('student',$db);
+   ?>

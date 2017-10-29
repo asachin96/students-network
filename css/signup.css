@@ -1,0 +1,159 @@
+img{
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+}
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+.signup_wrap label input{
+	position:absolute;
+	right:170px;
+	width:180px;
+}
+
+.signup_wrap label div{
+	position:absolute;
+	padding-top:3px;
+	left:450px;
+	color:white;
+}
+
+
+.signip_subwrap {
+	position:relative;
+	margin-bottom:20px;
+}
+
+.signup_name{
+	position:absolute;
+	right:370px;
+	padding-top:4px;
+	text-transform:capitalize;
+	font-size:14px;
+	color:white;
+}
+
+#college,#branch{
+	position:relative;
+	width:180px;
+}
+.signup_last,.signup_last input{
+	margin-left:20px;
+	color:white;
+	font-style:italic;
+	font-size:12px;
+}
+#resnd{
+	display:none;
+	position:absolute;
+	bottom:8px;
+	right:50px;
+}
+.button_submit,.button_submit:hover{
+	cursor:pointer;
+	padding:2px 2px 2px 2px;
+	border:0;
+	color:#CCCCCC;
+	background-color:rgba(8,93,111,.7);
+	box-shadow:inset 2px 2px 3px black;
+	border-radius:3px;
+}
+.button_submit:hover{
+	background-color:rgba(8,93,111,1);
+	color:#B3FFFF;
+}
+.button_submit:active{
+	color:#B3FFFF;
+	box-shadow:inset 2px 2px 10px black;	
+}
+
+.signup_left{
+	height:100%;
+	background-color:rgba(52,92,128,1);
+	overflow:auto;
+}
+
+.signup_right{
+	position:absolute;
+	width:35%;
+	background-color:rgba(9,83,111,.6);
+	height:100%;
+	right:0;
+	top:8px;
+}
+
+.signup_heading{
+	position:absolute;
+	left:30%;
+	top:20px;
+	font-family: 'Condiment',sans-serif, cursive;
+	color:white;
+	font-size:40px;
+}
+.signup_wrap{
+	position:relative;
+	margin:7% 39% 0 4%;
+	padding:10px 10px 10px 10px;
+	background-color:rgba(8,93,111,.6);
+	border-radius:15px;
+	box-shadow:inset 2px 2px 150px black;
+	border:thin solid  rgba(63,114,181,1);
+}
+
+.logo_down{
+	position:relative;
+	left:30%;;
+	font-family: 'Pinyon Script', cursive;
+	font-size:35px;
+	color:white;
+}
+ .logo_down a{
+	color:white;
+}
+
+.terms_wrap{
+	margin-top:50px;
+}
+
+.terms_list{
+	list-style-type:circle;
+	color:white;
+	margin:20px 50px 50px 50px;
+	font-size:12px;
+	font-style:italic;
+}	
+.heading{
+	    color:white;
+	font-family: 'Condiment',sans-serif, cursive;
+	font-size:20px;
+}
+
+.mes{
+	position:absolute;
+	left:140px;
+	z-index:3;
+}
+
+.feed{
+	position:absolute;
+	right:40px;
+	z-index:3;
+}
+
+.bug{
+	position:relative;
+	color:white;
+	font-size:12px;
+}
+
+.thanks{
+	color:white;
+	font-size:12px;
+}
+
